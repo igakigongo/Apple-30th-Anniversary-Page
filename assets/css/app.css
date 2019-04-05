@@ -5,27 +5,61 @@ body {
  -webkit-font-smoothing: antialiased;
 }
 
-header {
- left: auto;
- position: relative;
- right: auto;
- top: 20px;
+main {
+ background-image: url("../images/your_verse_hero.jpg");
+ background-position: center bottom;
+ background-repeat: no-repeat;
+ height: 75vh;
+ margin: 0 auto;
 }
 
+/* Navigation */
 .navigation {
- margin: 0 auto;
- min-width: 800px;
+ position: relative;
+ top: 15px;
 }
 
 .navigation ul {
  display: flex;
  flex-direction: row;
+ justify-content: center;
 }
 
-.hero {
- background-image: url("../images/your_verse_hero.jpg");
- background-position: center bottom;
+.navigation li a {
+ background: url("../images/nav/globalnav.png") no-repeat;
+ cursor: pointer;
+ direction: ltr;
+ float: left;
+ height: 36px;
+ overflow: hidden;
+ width: 102px;
+ text-indent: -9999px;
+}
+
+.navigation ul li a span {
+ background: url("../images/nav/globalnav_text.png") no-repeat 50% 0;
+ display: block;
+ height: 30px;
+ margin: 3px auto;
+ width: 100%;
+}
+
+.navigation ul li:first-child a span {
+ background-position: 50% 0;
+}
+
+/*
+.nav-search {
+ align-items: center;
+ background-image: url("../images/nav/globalsearch_bg.png");
  background-repeat: no-repeat;
- height: 70vh;
- margin: 0 auto;
+ display: flex;
+ justify-content: center;
+}
+
+.nav-search input {
+ border-radius: 3px;
+ height: 19px;
+ padding: 2px 18px 1px 22px;
+ width: 80%;
 }
