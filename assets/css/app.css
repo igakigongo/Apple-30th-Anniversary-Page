@@ -1,0 +1,31 @@
+body {
+ background-color: transparent;
+ color: #333;
+ font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+ -webkit-font-smoothing: antialiased;
+}
+
+header {
+ left: auto;
+ position: relative;
+ right: auto;
+ top: 20px;
+}
+
+.navigation {
+ margin: 0 auto;
+ min-width: 800px;
+}
+
+.navigation ul {
+ display: flex;
+ flex-direction: row;
+}
+
+.hero {
+ background-image: url("../images/your_verse_hero.jpg");
+ background-position: center bottom;
+ background-repeat: no-repeat;
+ height: 70vh;
+ margin: 0 auto;
+}
