@@ -1,57 +1,66 @@
+html {
+ height: 100%;
+}
+
 body {
- background-color: transparent;
  color: #333;
  font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
  -webkit-font-smoothing: antialiased;
+ height: 100%;
 }
 
-.billboard {
- bottom: 292px;
- left: 0;
- overflow: hidden;
- position: absolute;
- right: 0;
- top: 0;
+main {
+ height: 70%;
+ min-height: 70%;
 }
 
-.hero {
- bottom: 0;
- left: 0;
- position: absolute;
- right: 0;
- top: 0;
+footer {
+ height: 30%;
+ min-height: 30%;
 }
 
-.your-verse {
- background: url("../images/your_verse_hero.jpg") 50% 100% no-repeat;
- background-size: 1440px 1315px;
- left: 50%;
- margin-left: -720px;
+.container {
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+ height: 100%;
+ margin: 0 auto;
+ min-height: 100%;
  min-width: 1440px;
- right: auto;
  width: 1440px;
+}
+
+.hero-unit {
+ background: url("../images/your_verse_hero.jpg") 50% 100% no-repeat;
+ background-position: bottom center;
+ background-size: auto;
+ overflow-y: hidden;
 }
 
 /* Navigation */
 .navigation {
+ margin: 0 auto;
  position: relative;
- top: 15px;
+ top: 20px;
 }
 
 .navigation ul {
- display: flex;
- flex-direction: row;
  justify-content: center;
  min-width: calc(9 * 102px);
+}
+
+.navigation ul, .promotion, .copyright ul {
+ display: flex;
+ flex-direction: row;
 }
 
 .navigation ul li {
  background-image: radial-gradient(#666, grey);
  background-repeat: no-repeat;
- border: 1px solid #555;
- -webkit-box-sizing: border-box;
+ /*border: 1px solid #555;*/
+ /*-webkit-box-sizing: border-box;
  -moz-box-sizing: border-box;
- box-sizing: border-box;
+ box-sizing: border-box;*/
  height: 36px;
  position: relative;
  width: 102px;
@@ -83,6 +92,25 @@ body {
  text-decoration: none;
 }
 
+/* Promotion Content */
+.promotion {
+ justify-content: space-between;
+}
+
+.promotion li {
+ width: 25%;
+}
+
+.promotion li:nth-child(2), .promotion li:nth-child(3) {
+ margin-left: 1px;
+ margin-right: 1px;
+}
+
+.promotion li img {
+ height: auto;
+ width: 100%;
+}
+
 .fa-apple {
  font-size: 18px;
 }
@@ -101,4 +129,41 @@ body {
  height: 19px;
  padding: 2px 18px 1px 22px;
  width: 80%;
+}*/
+.copyright {
+ color: #6e6e6e;
+ font-size: .8334em;
+ height: 90px;
+ line-height: 1.2;
+ margin: 0 auto;
+ min-width: 980px;
+ padding: 1em 0 2.6em;
+ width: 980px;
+}
+
+.copyright .left, .copyright .right {
+ padding-top: 1.5em;
+}
+
+.copyright .left {
+ float: left;
+ text-align: left;
+ width: 49%;
+}
+
+.copyright .right {
+ float: right;
+ text-align: right;
+ width: 51%;
+}
+
+.copyright .right li a {
+ border-right: 1px solid #ccc;
+ display: inline-block;
+ margin-right: .3em;
+ padding-right: .3em;
+}
+
+.copyright .right li:last-child a {
+ border-right: none;
 }
