@@ -20,9 +20,9 @@ footer {
 }
 
 .container {
- -webkit-box-sizing: border-box;
+ /*-webkit-box-sizing: border-box;
  -moz-box-sizing: border-box;
- box-sizing: border-box;
+ box-sizing: border-box;*/
  height: 100%;
  margin: 0 auto;
  min-height: 100%;
@@ -35,6 +35,34 @@ footer {
  background-position: bottom center;
  background-size: auto;
  overflow-y: hidden;
+}
+
+.hero-unit-center {
+ -ms-align-items: center;
+ align-items: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ text-align: center;
+}
+
+.hero-unit-center .top {
+ padding-top: 11rem;
+}
+
+.hero-unit-center .middle {
+ margin-top: -15px;
+}
+
+.hero-unit-center .hoverable {
+ background-image: url("../images/hero/cta_your_verse_27pt.png");
+ background-position: top;
+ height: 32px;
+ width: 980px;
+}
+
+.hero-unit-center .hoverable:hover {
+ background-position: bottom;
 }
 
 /* Navigation */
@@ -55,12 +83,8 @@ footer {
 }
 
 .navigation ul li {
- background-image: radial-gradient(#666, grey);
- background-repeat: no-repeat;
- /*border: 1px solid #555;*/
- /*-webkit-box-sizing: border-box;
- -moz-box-sizing: border-box;
- box-sizing: border-box;*/
+ background: linear-gradient(to top, rgb(100, 100, 100) 50%, rgb(123, 123, 123) 55%);
+ border: 1px solid #555;
  height: 36px;
  position: relative;
  width: 102px;
@@ -133,11 +157,10 @@ footer {
 .copyright {
  color: #6e6e6e;
  font-size: .8334em;
- height: 90px;
- line-height: 1.2;
+ /*height: 90px;
+ line-height: 1.2;*/
  margin: 0 auto;
  min-width: 980px;
- padding: 1em 0 2.6em;
  width: 980px;
 }
 
