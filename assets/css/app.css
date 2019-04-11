@@ -15,14 +15,12 @@ main {
 }
 
 footer {
- height: 30%;
- min-height: 30%;
+ height: 29%;
+ margin-top: 2px;
+ min-height: 29%;
 }
 
 .container {
- /*-webkit-box-sizing: border-box;
- -moz-box-sizing: border-box;
- box-sizing: border-box;*/
  height: 100%;
  margin: 0 auto;
  min-height: 100%;
@@ -85,6 +83,10 @@ footer {
 .navigation ul li {
  background: linear-gradient(to top, rgb(100, 100, 100) 50%, rgb(123, 123, 123) 55%);
  border: 1px solid #555;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ /* csslint allow: box-sizing */
+ box-sizing: border-box;
  height: 36px;
  position: relative;
  width: 102px;
@@ -96,8 +98,33 @@ footer {
 }
 
 .navigation ul li:last-child {
+ align-items: center;
  border-bottom-right-radius: 3px;
  border-top-right-radius: 3px;
+ display: flex;
+ justify-content: center;
+ width: auto;
+}
+
+.search {
+ background-image: url("../images/nav/globalsearch_field.png");
+ background-position: top -1px left 0;
+ background-repeat: no-repeat;
+ border-radius: 15px;
+ border-style: none;
+ width: 70%;
+}
+
+.search:focus {
+ background-position: bottom -1px right;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ /* csslint allow: box-sizing */
+ box-sizing: border-box;
+ margin: 0 15px;
+ outline: none;
+ padding-left: 15px;
+ width: 140px;
 }
 
 .navigation li a {
@@ -139,26 +166,10 @@ footer {
  font-size: 18px;
 }
 
-/*
-.nav-search {
- align-items: center;
- background-image: url("../images/nav/globalsearch_bg.png");
- background-repeat: no-repeat;
- display: flex;
- justify-content: center;
-}
-
-.nav-search input {
- border-radius: 3px;
- height: 19px;
- padding: 2px 18px 1px 22px;
- width: 80%;
-}*/
+/* Copyright Section */
 .copyright {
  color: #6e6e6e;
  font-size: .8334em;
- /*height: 90px;
- line-height: 1.2;*/
  margin: 0 auto;
  min-width: 980px;
  width: 980px;
