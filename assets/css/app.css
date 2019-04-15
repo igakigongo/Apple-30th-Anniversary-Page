@@ -1,38 +1,50 @@
-html {
+html, body {
+ background: #fff;
  height: 100%;
+ min-width: 1440px;
+ position: relative;
+ z-index: 1;
 }
 
 body {
  color: #333;
  font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
  -webkit-font-smoothing: antialiased;
- height: 100%;
+ max-height: 1472px;
+ min-height: 830px;
 }
 
 main {
- height: 70%;
- min-height: 70%;
+ background: url("../images/your_verse_hero.jpg") 50% 100% no-repeat;
+ background-position: bottom center;
+ background-size: 1440px 1315px;
+ bottom: 292px;
+ left: 50%;
+ margin-left: -720px;
+ overflow: hidden;
+ position: absolute;
+ right: auto;
+ top: 0;
+ width: 1440px;
+ z-index: 2;
 }
 
 footer {
- height: 29%;
+ bottom: 5.625rem;
+ height: 200px;
+ left: 0;
  margin-top: 2px;
- min-height: 29%;
+ position: absolute;
+ right: 0;
 }
 
 .container {
  height: 100%;
  margin: 0 auto;
- min-height: 100%;
- min-width: 1440px;
- width: 1440px;
 }
 
-.hero-unit {
- background: url("../images/your_verse_hero.jpg") 50% 100% no-repeat;
- background-position: bottom center;
- background-size: auto;
- overflow-y: hidden;
+footer .container {
+ width: 1440px;
 }
 
 .hero-unit-center {
@@ -65,9 +77,11 @@ footer {
 
 /* Navigation */
 .navigation {
- margin: 0 auto;
- position: relative;
- top: 20px;
+ left: 0;
+ position: absolute;
+ right: 0;
+ top: 7em;
+ z-index: 3;
 }
 
 .navigation ul {
@@ -128,24 +142,33 @@ footer {
 }
 
 .navigation li a {
+ align-items: center;
+ bottom: 0;
  color: #fff;
  cursor: pointer;
+ display: flex;
+ height: 100%;
+ justify-content: center;
  left: 0;
- margin-top: -9px;
  overflow: hidden;
  position: absolute;
  right: 0;
- text-align: center;
- top: 50%;
+ top: 0;
 }
 
 .navigation li a, .navigation li a:hover, .navigation li a:visited {
  text-decoration: none;
 }
 
+.navigation li a:hover {
+ background: #575757;
+ background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAkCAQAAADifZiHAAAAJ0lEQ…zE8JeJ4R8q%2Bo%2BKCIH%2FjEA1TAyMSIgJRkIQM9BYAGa0Dj%2FXpUiAAAAAAElFTkSuQmCC) repeat-x 0 0, url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAABCAQAAACvIOyMAAAAE0lEQVQIW2P8z8jAwMAIh0wICAAa0gETv9XXOgAAAABJRU5ErkJggg%3D%3D) repeat-y 100% 0, url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAABCAQAAACvIOyMAAAAEklEQVQIW2P8L8TwDwn%2Bh0MGAKnjDAIoAAlcAAAAAElFTkSuQmCC) repeat-y 0 0, rgba(0, 0, 0, .4);
+}
+
 /* Promotion Content */
 .promotion {
  justify-content: space-between;
+ width: 100%;
 }
 
 .promotion li {
